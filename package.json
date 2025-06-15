@@ -1,0 +1,24 @@
+{
+  "name": "node-js",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Chetanmittal27/Learning-Node.JS#readme",
+  "bugs": {
+    "url": "https://github.com/Chetanmittal27/Learning-Node.JS/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chetanmittal27/Learning-Node.JS.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0"
+  }
+}
