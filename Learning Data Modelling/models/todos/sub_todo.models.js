@@ -1,5 +1,21 @@
-import mongoose from 'mongoose'
+import mongoose, { trusted } from 'mongoose'
 
-const userSchema = new mongoose.Schema({});
+const subTodoSchema = new mongoose.Schema({
+    content: {
+        type: String,
+        required: true
+    },
 
-export const User = mongoose.model("User" , userSchema);
+    complete: {
+        type: Boolean,
+        default: false
+    },
+
+    createdBy: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "User"
+    }
+    
+} , {timestamps : true});
+
+export const SubTodo = mongoose.model("SubTodo" , subTodoSchema)
